@@ -1,8 +1,11 @@
-# My Project
+# Автотесты для проверки локализации интернет-магазина
 
-This is a sample project for practicing Selenium + pytest.
+Репозиторий содержит автотесты для сайта [selenium1py.pythonanywhere.com](http://selenium1py.pythonanywhere.com), проверяющие наличие кнопки добавления товара в корзину для разных языков интерфейса.
 
-## Features
-- UI automation
-- Pytest integration
-- Page Object Model
+## Содержимое
+- `conftest.py` — фикстура `browser` с поддержкой параметра `--language`
+- `test_items.py` — тест на наличие кнопки "Добавить в корзину"
+
+## Как запустить тест
+```bash
+pytest --language=fr test_items.py
